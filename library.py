@@ -28,32 +28,10 @@ def display_books(books):
     for i, book in enumerate(books, start=1):
         print(f"{i}. {book['name']} by {book['author']} (ISBN: {book['ISBN']}, copies: {book['book_count']})")
 
-#ทดสอบ function add_book
-print("book 0")
-add_book(books, "111", "Python 101", "Alice", 5)
-
-print("book 1")
-add_book(books, "111", "Python 101", "Alice", 5)
-
-print("book 2")
-add_book(books, "222", "Learn C++", "Bob", 3)
-    
-#ทดสอบ function search_books
-add_book(books, "001", "python programming", "alice johnson", 5)
-add_book(books, "002", "learn django", "bob smith", 3)
-add_book(books, "003", "data science basics", "charlie brown", 7)
-
-print("keyword: 'python'")
-search_books(books, "python")
-
-print("\nkeyword: 'bob'")
-search_books(books, "bob")
-
-print("\nkeyword: 'science'")
-search_books(books, "science")
-
-print("\nkeyword: 'javascript'")
-search_books(books, "javascript")
-
-#ทดสอบ function display_books
-display_books(books)
+add_book (books,' 001''Python Crash Course', 'Eric Matthes', 3)
+add_book (books,' 002''Clean Code', 'Robert Martin', 2)
+add_book (books,' 003''The Pragmatic Programmer','Hunt & Thomas', 2)
+add_book (books,' 004''Design Patterns', 'Gang of Four', 1)
+add_book (books,' 005''Introduction to Algorithms', 'Cormen et al.', 2)
+add_book (books,' 006''Code Complete', 'Steve McConnell', 3)
+add_book (books,' 007", 'Refactoring', 'Martin Fowler', 2)
